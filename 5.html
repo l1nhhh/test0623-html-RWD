@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD 練習</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 16px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .content {
+            background: white;
+            padding: 16px;
+            margin-top: 16px;
+            border-radius: 8px;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 12px;
+            }
+
+            header {
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RWD 練習</h1>
+        </header>
+
+        <section class="content">
+            <img src="cat.jpg" alt="可愛的貓咪">
+            <p>這個範例只有一個內容區塊，圖片會自動縮放到容器寬度。</p>
+            <p>當畫面變窄時，整體內容會維持單欄顯示，並且保留合理內邊距。</p>
+        </section>
+    </div>
+</body>
+</html>
